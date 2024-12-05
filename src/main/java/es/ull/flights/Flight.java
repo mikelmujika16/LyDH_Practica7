@@ -53,6 +53,10 @@ public class Flight {
         return passengers.size();
     }
 
+    public int getSeats() {
+        return seats;
+    }
+
     public boolean addPassenger(Passenger passenger) {
         if (getNumberOfPassengers() >= seats) {
             throw new RuntimeException("Not enough seats for flight " + getFlightNumber());
